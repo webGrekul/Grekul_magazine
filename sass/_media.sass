@@ -1,0 +1,240 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) 
+	/**/
+	.h-nav
+		padding: 10px
+		a
+			margin-right: 10px
+			font-size: 12px
+	.panel .btn 
+		padding: 14px
+	 	font-size: 13px
+	.btn-basket 
+		padding-right: 14px !important
+
+	.panel .btn-menu, 
+	.panel-menu 
+		width: 260px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px)
+	/**/
+	.h-nav-center 
+		display: none
+	.logo 
+		margin-top: 5px
+		img 
+			max-width: 100% 
+			height: auto
+
+	.panel 
+		padding: 5px 10px
+
+	.sp 
+		display: none
+	
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+	.logo 
+    	margin-top: 0		
+
+	.h-nav 
+		padding: 5px
+		a 
+			margin-right: 5px 
+			font-size: 11px
+
+	.h-nav-tabs 
+		.active:after 
+			bottom: -9px
+
+	.h-nav-tabs a.active:before
+		bottom: -10px
+
+	.header-bottom
+		padding: 15px 0 20px
+
+	.h-phone 
+		float: none
+
+	.h-phone > a 
+		padding-left: 0
+		margin-top: 5px 
+		height: 45px 
+		background-position: center 
+
+	.h-phone small, 
+	.h-phone span 
+		display: none
+
+	.arrow:after, 
+	.arrow:before 
+		left: auto 
+		right: 35px
+
+	.panel-menu 
+		position: fixed
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		width: auto
+		height: auto
+		margin-top: 0
+		padding-top: 0
+		border-radius: 0
+		overflow-y: auto
+
+	.panel-menu a 
+		padding: 8px 20px 8px 17px
+
+	.panel-menu ul 
+		position: static
+		height: auto
+		width: auto
+		padding: 0
+		border: none
+		border-radius: 0
+		box-shadow: none
+		background: #eee
+
+	.panel-menu ul a 
+		padding-left: 25px
+
+	.panel-menu ul ul 
+		background: #ccc
+
+
+	.panel-menu ul ul a 
+		padding-left: 35px
+
+	.panel-menu li.close-menu 
+		display: block
+
+	.panel-menu li.close-menu a 
+		background: $blue
+		color: #fff
+		font-size: 16px
+		font-weight: bold
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+	/**/
+	.hidden-xss 
+		display: none
+
+	.col-xss-12 
+		width: auto 
+		float: none
+
+	.col-xss-6 
+		width: 50%
+
+	.col-xss-3 
+		width: 25%
+
+	.h-panel 
+		padding: 0 5px
+		
+	.h-phone 
+		margin-top: 0
+
+	.h-phone > a 
+		margin-top: 0 			
+
+	#h-search 
+		position: fixed
+		top: -90px
+		left: 10px
+		right: 10px
+		z-index: 9999
+		
+	.h-search__link 
+		display: block
+		margin-right: -15px
+		margin-left: 15px
+
+	.h-search_close 
+		position: absolute
+		top: -25px
+		right: 0
+		display: block
+		height: 20px
+		width: 20px
+		font-size: 16px
+		line-height: 18px
+		text-align: center
+		color: #fff
+		background: #333 
+		border-radius: 2px
+
+	.panel .btn-menu 
+		width: auto
+		padding: 14px 41px 14px 50px
+
+	.btn-basket i.ic-basket 
+		margin-right: 0
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	.logo 
+    	margin-top: 10px
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
